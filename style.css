@@ -1,93 +1,282 @@
+/* Reset & Base Styles */
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f0f0f;
-      color: #f2f2f2;
-      scroll-behavior: smooth;
-    }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b9ceee;
+  color: #000000;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    header {
-      text-align: center;
-      padding: 5rem 2rem 3rem;
-      background: linear-gradient(145deg, #111111, #1c1c1c);
-    }
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffcc;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    header p {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-top: 0.5rem;
-    }
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+}
 
-    nav {
-    position: absolute;
-    top: 20px;
-    right: 2rem;
-    display: flex;
-    gap: 1rem;
-    }
-    nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-    }
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
 
-    nav a:hover {
-    color: #00ffcc;
-    }
+/* Header Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
 
-    nav a:hover {
-      color: #00ffcc;
-    }
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #000000;
+  transition: transform 0.3s ease;
+}
 
-    section {
-      max-width: 800px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
+.profile-img:hover {
+  transform: rotate(10deg);
+}
 
-    section.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
 
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #00ffcc;
-      border-left: 4px solid #00ffcc;
-      padding-left: 10px;
-    }
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
 
-    .projects .project {
-      background-color: #1a1a1a;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #00ffcc;
-      transition: transform 0.3s ease;
-    }
+/* Navbar */
+.navbar {
+  /*background: #c4c2c2;*/
+  padding: 1rem;
+  text-align: center;
+}
 
-    .projects .project:hover {
-      transform: translateX(5px);
-    }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #111;
-      color: #666;
-      font-size: 0.9rem;
-    }
+.navbar li a {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+  background: #000000;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  font-size: 16px;
+  margin: 2rem 0;
+}
+
+.section h2 {
+  border-left: 5px solid #000000;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Projects / Portofolio */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.603);
+}
+
+#experience li {
+  list-style: none;
+}
+
+/* Skill List */
+.skills-list {
+  list-style: none;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.skills-list li::before {
+  content: "✨";
+  font-size: 15px;
+  margin-right: 0.5rem;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 13px;
+}
+
+.social-links li {
+  margin: 0.5rem 0;
+}
+
+.social-links li a i {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Marquee (Teks Berjalan) */
+/* Fix Teks Marquee */
+.marquee {
+  position: fixed;
+  bottom: 0; /* Letakkan di bagian bawah halaman */
+  width: 100%;
+  background: #000000;
+  color: #fff;
+  padding: .5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1000; /* Pastikan ada di atas semua elemen */
+}
+
+.marquee p {
+  
+  width: 100%;
+  animation: marquee 40s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  background: #000000;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(180deg);
+}
+
+/* Dark Mode */
+body.dark-mode .theme-toggle {
+    background-color: #f3f3f3;
+}
+body.dark-mode {
+  background-color: #1e272e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .hero p {
+  font-size: 1.2rem;
+  color: #cfcdcd;
+}
+
+body:not(.dark-mode) a {
+  color: #000000;
+}
+
+body.dark-mode .navbar {
+    /*background: #000000;
+    border-color: #444;*/
+}
+
+body.dark-mode .navbar li a:hover {
+  background: #00ffff;
+  color: #000000;
+}
+
+body.dark-mode .section h2 {
+    border-left: 5px solid #00ffff;
+}
+
+body.dark-mode .profile-img {
+  border-color: #00ffff;
+}
+
+body.dark-mode .marquee {
+  background: #00ffff;
+  color: #000;
+}
+
+body.dark-mode .project-card {
+  background: #222222;
+  border-color: #444;
+}
+
+body.dark-mode .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px hsla(0, 0%, 100%, 0.603);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list {
+    column-count: 1;
+  }
+}
