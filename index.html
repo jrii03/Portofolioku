@@ -1,112 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolioku</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com ">
-  <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. Fajriana | Portfolio</title>
+  <link rel="stylesheet" href="webporto.css">
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Toggle Mode Gelap -->
+  <div class="theme-toggle" id="themeToggle">🌙</div>
+
   <!-- Header -->
-  <header>
-    <h1>M. Fajriana</h1>
-    <p>A junior Frontend Developer & Artificial Intelligence (AI)</p>
+  <header class="hero">
+    <img src="/image/9bb198848ad17f31c4a31e1dcfa1dc80.jpg" class="profile-img" />
+    <h1>Halo, Saya M. Fajriana</h1>
+    <p>Pecinta AI & Web3 | Sedang Belajar</p>
   </header>
 
-  <!-- Navbar -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <!-- Navigasi -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#hobby">Hobi</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
   </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-  <p>
-    Halo! Nama saya Fajri, saya adalah seorang pemula yang tertarik dengan dunia teknologi, khususnya pengembangan web (Frontend), Web3, dan Artificial Intelligence (AI). Saat ini saya sedang fokus mempelajari dasar-dasar pemrograman seperti HTML dan CSS untuk membangun fondasi kuat di bidang pengembangan website.
-  </p>
-  <p>
-    Selain frontend, saya juga mulai menjelajahi konsep-konsep dasar Web3 seperti blockchain dan smart contract karena saya percaya teknologi ini akan menjadi bagian penting dari masa depan internet. Di sisi AI, saya sangat tertarik dengan bagaimana mesin bisa memahami manusia melalui chatbot dan pembuatan gambar berbasis kecerdasan buatan.
-  </p>
-  <p>
-    Meskipun masih dalam tahap awal perjalanan coding, saya terus belajar dan mencoba membuat proyek-proyek sederhana untuk meningkatkan keterampilan saya. Saya percaya bahwa semangat untuk terus berkembang adalah kunci untuk menjadi seorang developer yang baik.
-  </p>
-  </section>
+  <!-- Bagian Utama -->
+  <main class="container">
 
-  <!-- Skills Section -->
-<!-- Skills Section -->
-<section id="skills">
-  <h2>Skill</h2>
-  <p style="margin-bottom: 1.5rem;">
-    Saya sedang membangun dasar-dasar pengembangan web dan teknologi terkait. Berikut adalah beberapa kemampuan yang sedang saya pelajari:
-  </p>
-  <ul>
-    <li><strong>HTML & CSS Dasar</strong> – Memahami struktur dan styling dasar website.</li>
-    <li><strong>JavaScript (Dasar)</strong> – Sedang mempelajari logika dan interaktivitas sederhana dengan JS.</li>
-    <li><strong>Responsive Design</strong> – Belajar membuat tampilan yang dapat menyesuaikan berbagai ukuran layar.</li>
-    <li><strong>Machine Learning</strong> – Memahami cara algoritma dapat belajar dari data untuk membuat prediksi yang akurat.</li>
-    <li><strong>Artificial Intelligence (AI)</strong> – Memahami prinsip-prinsip dasar yang memungkinkan mesin untuk meniru kecerdasan manusia.</li>
-  </ul>
-</section>
+    <!-- Tentang Saya -->
+    <section id="about" class="section">
+      <h2>Tentang Saya</h2>
+      <p>
+        Hai! Saya M. Fajriana, seorang yang tertarik pada dunia teknologi khususnya AI dan Web3.
+        Saat ini saya sedang dalam proses pembelajaran untuk memperdalam kedua bidang tersebut.
+        Saya suka bereksperimen dengan kode dan mencoba hal-hal baru setiap hari.
+      </p>
+    </section>
 
-  <!-- Projects Section -->
- <!-- Projects Section -->
-<section class="projects" id="projects">
-  <h2>Project</h2>
+    <!-- Portofolio -->
+    <section id="portfolio" class="section">
+      <h2>Portofolio / Karya</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Proyek 1: Eksperimen AI</h3>
+          <p>Analisis data sederhana menggunakan Python dan library AI.</p>
+        </div>
+        <div class="project-card">
+          <h3>Proyek 2: Mini Website</h3>
+          <p>Website statis sebagai latihan HTML, CSS, dan JavaScript.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Proyek 1: AI Chatbot -->
-  <div class="project">
-    <strong>Web AI Chatbot</strong><br/>
-    Sebuah web chat sederhana yang menggunakan API AI untuk memberikan respons otomatis kepada pengguna. Proyek ini membantu saya memahami bagaimana AI dapat digunakan untuk membangun interaksi yang lebih personal antara manusia dan mesin.
+    <!-- Skill -->
+    <section id="skills" class="section">
+      <h2>Skill</h2>
+      <ul class="skills-list">
+        <li>Python (AI & ML)</li>
+        <li>JavaScript (Web Development)</li>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience" class="section">
+      <h2>Pengalaman</h2>
+      <ul>
+        <li>Mengikuti workshop online tentang AI dan Web3</li>
+        <li>Membuat beberapa proyek kecil untuk eksplorasi konsep teknologi</li>
+        <li>Bergabung dengan komunitas coding lokal</li>
+      </ul>
+    </section>
+
+    
+    <!-- Hobi -->
+    <section id="hobby" class="section">
+      <h2>Hobi</h2>
+      <p>
+        Selain coding, saya suka menulis ide-ide random, membaca manga,
+        menonton anime, dan membaca artikel tentang perkembangan teknologi.
+      </p>
+    </section>
+    
+    <!-- Kontak -->
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+        <ul class="social-links">
+        <li><a href="https://instagram.com"  target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <li><a href="https://twitter.com"  target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+        <li><a href="https://wa.me/6281234567890"  target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+        <li><a href="https://github.com"  target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+      </ul>
+    </section>
+  </main>
+
+
+  <!-- Teks Berjalan Retro -->
+  <div class="marquee">
+    <p>Selamat datang di Web Saya!</p>
   </div>
 
-  <!-- Proyek 2: AI Generative Image -->
-  <div class="project">
-    <strong>AI Generative Image</strong><br/>
-    Sebuah web yang memanfaatkan teknologi AI untuk menghasilkan gambar dari teks deskripsi yang dimasukkan oleh pengguna. Melalui proyek ini, saya belajar bagaimana AI bisa menciptakan konten visual secara otomatis hanya dengan prompt teks.
-  </div>
-
-  <!-- Proyek 3: Portofolio Website -->
-  <div class="project">
-    <strong>Website Portofolio</strong><br/>
-    Website ini adalah hasil dari pembelajaran saya tentang HTML dan CSS dasar. Saya buat sebagai tempat untuk menampilkan proyek-proyek yang telah saya kerjakan serta memperkenalkan diri saya sebagai seorang calon developer.
-  </div>
-</section>
-  <!-- Contact Section -->
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Kontak</h2>
-  <p style="margin-bottom: 2rem;">
-    Jika kamu ingin berkolaborasi atau sekadar menyapa, jangan ragu untuk menghubungi saya melalui salah satu platform berikut:
-  </p>
-
-  <ul style="list-style: none; padding: 0; font-size: 1.2rem;">
-    <li style="margin-bottom: 1rem;">
-      <i class="fab fa-github" style="width: 24px; text-align: center; color: #00ffcc;"></i>
-      <a href="https://github.com/jrii03 " target="_blank" style="color: #fff; text-decoration: none;">GitHub</a>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <i class="fab fa-twitter" style="width: 24px; text-align: center; color: #00ffcc;"></i>
-      <a href="https://twitter.com/fajri_0403 " target="_blank" style="color: #fff; text-decoration: none;">Twitter / X</a>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <i class="fab fa-instagram" style="width: 24px; text-align: center; color: #00ffcc;"></i>
-      <a href="https://instagram.com/fajri_0410" target="_blank" style="color: #fff; text-decoration: none;">Instagram</a>
-    </li>
-  </ul>
-</section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 M. Fajriana. All rights reserved.
-  </footer>
-  <script src="script.js"></script>
+  <script src="webporto.js"></script>
 </body>
 </html>
